@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mars Base Control</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="stars"></div>
+    <div class="planet"></div>
+
+    <div class="hud">
+
+    <header>
+        <h1>🚀 MARS BASE CONTROL</h1>
+        <p>Управляй колонией на Марсе и выживай среди космических угроз</p>
+    </header>
+
+    <main class="container">
+
+        <div class="card" id="energyCard">
+            <h2>⚡ Энергия</h2>
+
+            <div class="progress">
+                <div class="bar energy-bar" id="energyBar"></div>
+            </div>
+
+            <p id="energyText">100%</p>
+
+            <button id="energyBtn">
+                Зарядить реактор
+            </button>
+        </div>
+
+        <div class="card" id="oxygenCard">
+            <h2>🫁 Кислород</h2>
+
+            <div class="progress">
+                <div class="bar oxygen-bar" id="oxygenBar"></div>
+            </div>
+
+            <p id="oxygenText">100%</p>
+
+            <button id="oxygenBtn">
+                Запустить генератор
+            </button>
+        </div>
+
+        <div class="card" id="foodCard">
+            <h2>🍕 Еда</h2>
+
+            <div class="progress">
+                <div class="bar food-bar" id="foodBar"></div>
+            </div>
+
+            <p id="foodText">100%</p>
+
+            <button id="foodBtn">
+                Вырастить урожай
+            </button>
+        </div>
+
+    </main>
+
+    <section class="mission">
+
+        <h2>🎯 Центр миссий</h2>
+
+        <button id="missionBtn">
+            Получить миссию
+        </button>
+
+        <p id="missionText">
+            Ожидание новой миссии...
+        </p>
+
+    </section>
+
+    <section class="log-section">
+
+        <h2>📡 Журнал событий</h2>
+
+        <ul id="log"></ul>
+
+    </section>
+
+    <script src="script.js"></script>
+<!-- ===== QUIZ OVERLAY ===== -->
+    <div id="quizOverlay" class="overlay hidden">
+    
+        <div class="quizWindow">
+    
+            <h2>⚡ Активация реактора</h2>
+    
+            <p id="quizQuestion">Проверка систем...</p>
+    
+            <div class="quizButtons">
+    
+                <button id="yesBtn">ДА</button>
+                <button id="noBtn">НЕТ</button>
+    
+            </div>
+    
+        </div>
+    
+    </div>
+    <div id="quizOverlay" class="overlay hidden"></div>
+    <div id="evacScreen" class="evac hidden"></div>
+    <div id="evacScreen" class="evac hidden">
+    🚨 СРОЧНАЯ ЭВАКУАЦИЯ
+</div>
+</body>
+</html>
